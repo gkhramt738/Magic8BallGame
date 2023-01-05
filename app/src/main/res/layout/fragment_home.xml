@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg2"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="223dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:id="@+id/res_title"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="50dp" />
+
+            <TextView
+                android:id="@+id/space"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:text="@string/horiz_line"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="40dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#FFFFFF"
+                android:foreground="#FFFFFF"
+                android:backgroundTint="#FFFFFF" />
+
+            <Button
+                android:id="@+id/why_magic_8_ball"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:background="#00FFFFFF"
+                android:textColor="@color/black"
+                android:onClick="this"
+                android:text="@string/about"
+                tools:ignore="OnClick" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/instructions_button"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:background="#00FFFFFF"
+                android:onClick="this"
+                android:textColor="@color/black"
+                android:text="@string/ttt_title"
+                tools:ignore="OnClick" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <Button
+                android:id="@+id/magic_8_game_button"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:background="#00FFFFFF"
+                android:onClick="this"
+                android:textColor="@color/black"
+                android:text="@string/magic_title"
+                tools:ignore="OnClick" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
